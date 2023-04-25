@@ -8,6 +8,7 @@ app = Flask(__name__)
 @app.route('/upload', methods=['POST'])
 def upload():
     try:
+        print(0)
         # Get the base64 image string from the request
         base64_image = request.json['image']
         print(1)
