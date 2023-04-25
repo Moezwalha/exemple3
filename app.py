@@ -17,6 +17,7 @@ def upload():
         # Open the image from bytes using PIL
         image = Image.open(BytesIO(image_bytes))
         
+        print(image)
         # Process the image as needed
         
         # Return a response if needed
