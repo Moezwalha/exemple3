@@ -10,13 +10,13 @@ def upload():
     try:
         # Get the base64 image string from the request
         base64_image = request.json['image']
-        
+        print(1)
         # Decode the base64 image string to bytes
         image_bytes = base64.b64decode(base64_image)
-        
+        print(2)
         # Open the image from bytes using PIL
         image = Image.open(BytesIO(image_bytes))
-        
+        print(3)
         print(image)
         # Process the image as needed
         
